@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Project Cards */
+.project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-title {
+    color: #212529;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Flag Icons */
+.flag-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: help;
+}
+
+/* Language Badges with Better Colors */
+.language-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.65rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Language-specific colors - modern, vibrant palette */
+.language-badge[data-language="sql"] {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+}
+
+.language-badge[data-language="c#"],
+.language-badge[data-language="csharp"] {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: white;
+}
+
+.language-badge[data-language="javascript"],
+.language-badge[data-language="js"] {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+}
+
+.language-badge[data-language="quarto"],
+.language-badge[data-language="qmd"] {
+    background: linear-gradient(135deg, #75AADB, #4F92C9);
+    color: white;
+}
+
+.language-badge[data-language="python"] {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+}
+
+.language-badge[data-language="java"] {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+}
+
+.language-badge[data-language="c++"],
+.language-badge[data-language="cpp"] {
+    background: linear-gradient(135deg, #e91e63, #c2185b);
+    color: white;
+}
+
+.language-badge[data-language="unity"] {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+}
+
+.language-badge[data-language="typescript"],
+.language-badge[data-language="ts"] {
+    background: linear-gradient(135deg, #3178c6, #235a97);
+    color: white;
+}
+
+.language-badge[data-language="php"] {
+    background: linear-gradient(135deg, #8892bf, #777bb3);
+    color: white;
+}
+
+.language-badge[data-language="ruby"] {
+    background: linear-gradient(135deg, #cc342d, #a61e1e);
+    color: white;
+}
+
+.language-badge[data-language="go"],
+.language-badge[data-language="golang"] {
+    background: linear-gradient(135deg, #00add8, #0087a8);
+    color: white;
+}
+
+.language-badge[data-language="rust"] {
+    background: linear-gradient(135deg, #dea584, #ce6d3c);
+    color: white;
+}
+
+.language-badge[data-language="html"] {
+    background: linear-gradient(135deg, #e34c26, #d13a18);
+    color: white;
+}
+
+.language-badge[data-language="css"] {
+    background: linear-gradient(135deg, #264de4, #2447c5);
+    color: white;
+}
+
+/* Default for unknown languages */
+.language-badge:not([data-language]) {
+    background: linear-gradient(135deg, #95a5a6, #7f8c8d);
+    color: white;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: translateY(-1px);
+}
+
+.btn-outline-dark:hover {
+    transform: translateY(-1px);
+}
+
+/* Section Headers */
+h2 {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .language-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.5rem;
+    }
+}

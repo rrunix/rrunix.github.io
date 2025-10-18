@@ -1,0 +1,33 @@
+bbdd:
+  title: "Database (BBDD)"
+  projects:
+    - name: "Relational Algebra Executor"
+      description: "Execute relational algebra expressions step by step"
+      language: "SQL"
+      content_language: "English"
+      github_page: "/relational_algebra_executor/"
+      github_repo: "https://github.com/rrunix/relational_algebra_executor"
+
+game_development:
+  title: "Network Game Development"
+  projects:
+    - name: "Course slides"
+      description: "Course slides"
+      language: "QMD"
+      content_language: "Spanish"
+      github_page: "/jer_slides/"
+      github_repo: "https://github.com/rrunix/jer_slides/"
+
+    - name: "Course notes"
+      description: "Course notes"
+      language: "QMD"
+      content_language: "Spanish"
+      github_page: "/jer_notes/"
+      github_repo: "https://github.com/rrunix/jer_notes/"
+
+    - name: "Course examples and visualizations"
+      description: "Course examples and visualizations"
+      language: "JS"
+      content_language: "English"
+      github_page: "/jerweb/"
+      github_repo: "https://github.com/rrunix/jerweb"

@@ -1,0 +1,62 @@
+---
+layout: default
+title: Research
+---
+
+<div class="container">
+    <div class="text-center mb-5">
+        <h1 class="display-4 mb-3">Research</h1>
+        <p class="lead text-muted">Research projects and academic work</p>
+    </div>
+
+    {% for category in site.data.research %}
+    <section class="mb-5">
+        <h2 class="mb-4 pb-2 border-bottom">{{ category[1].title }}</h2>
+
+        <div class="row g-4">
+            {% for project in category[1].projects %}
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm project-card">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h5 class="card-title mb-0">{{ project.name }}</h5>
+                            <div class="d-flex gap-2 align-items-center flex-wrap">
+                                {% if project.content_language %}
+                                <span class="flag-icon" data-lang="{{ project.content_language | downcase }}" title="{{ project.content_language }}">
+                                    {% if project.content_language == "Spanish" or project.content_language == "spanish" %}🇪🇸
+                                    {% elsif project.content_language == "English" or project.content_language == "english" %}🇬🇧
+                                    {% elsif project.content_language == "French" or project.content_language == "french" %}🇫🇷
+                                    {% elsif project.content_language == "German" or project.content_language == "german" %}🇩🇪
+                                    {% elsif project.content_language == "Italian" or project.content_language == "italian" %}🇮🇹
+                                    {% elsif project.content_language == "Portuguese" or project.content_language == "portuguese" %}🇵🇹
+                                    {% elsif project.content_language == "Chinese" or project.content_language == "chinese" %}🇨🇳
+                                    {% elsif project.content_language == "Japanese" or project.content_language == "japanese" %}🇯🇵
+                                    {% elsif project.content_language == "Korean" or project.content_language == "korean" %}🇰🇷
+                                    {% else %}🌐
+                                    {% endif %}
+                                </span>
+                                {% endif %}
+                                <span class="badge language-badge" data-language="{{ project.language | downcase }}">
+                                    {{ project.language }}
+                                </span>
+                            </div>
+                        </div>
+
+                        <p class="card-text text-muted flex-grow-1">{{ project.description }}</p>
+
+                        <div class="d-grid gap-2">
+                            <a href="{{ project.github_page }}" target="_blank" class="btn btn-primary">
+                                <i class="bi bi-box-arrow-up-right"></i> View Project
+                            </a>
+                            <a href="{{ project.github_repo }}" target="_blank" class="btn btn-outline-dark">
+                                <i class="bi bi-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+</div>

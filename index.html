@@ -1,0 +1,60 @@
+---
+layout: default
+title: Home
+---
+
+<style>
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page-link-card {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .page-link-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+    }
+</style>
+
+<div class="container">
+    <div class="text-center mb-5">
+        <h1 class="display-4 mb-3">Welcome</h1>
+        <p class="lead text-muted">Select a section to explore</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5">
+            <div class="card h-100 shadow-sm page-link-card">
+                <div class="card-body d-flex flex-column text-center p-5">
+                    <i class="bi bi-book display-1 text-primary mb-4"></i>
+                    <h3 class="card-title mb-3">Teaching</h3>
+                    <p class="card-text text-muted mb-4">GitHub projects for teaching BBDD and Game Development</p>
+                    <a href="/teaching" class="btn btn-primary btn-lg mt-auto">
+                        <i class="bi bi-arrow-right"></i> Go to Teaching
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-5">
+            <div class="card h-100 shadow-sm page-link-card">
+                <div class="card-body d-flex flex-column text-center p-5">
+                    <i class="bi bi-lightbulb display-1 text-success mb-4"></i>
+                    <h3 class="card-title mb-3">Research</h3>
+                    <p class="card-text text-muted mb-4">Research projects and academic work</p>
+                    <a href="/research" class="btn btn-success btn-lg mt-auto">
+                        <i class="bi bi-arrow-right"></i> Go to Research
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

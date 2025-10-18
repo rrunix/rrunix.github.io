@@ -1,0 +1,10 @@
+# Add your research projects here following this format:
+# research_projects:
+#   title: "Research Projects"
+#   projects:
+#     - name: "Project Name"
+#       description: "Project description"
+#       language: "Python"
+#       content_language: "English"
+#       github_page: "https://..."
+#       github_repo: "https://github.com/..."
